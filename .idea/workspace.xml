@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8a5bfde-d59f-41c4-89ec-d0c420102271" name="Changes" comment="" />
+    <list default="true" id="d8a5bfde-d59f-41c4-89ec-d0c420102271" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +54,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "oryanend"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "git@github.com:oryanend/checker.git",
@@ -194,7 +202,7 @@
       <workItem from="1779671939788" duration="3060000" />
       <workItem from="1779675151476" duration="104000" />
       <workItem from="1779675451175" duration="864000" />
-      <workItem from="1779750398471" duration="4930000" />
+      <workItem from="1779750398471" duration="5283000" />
     </task>
     <servers />
   </component>
