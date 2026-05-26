@@ -48,7 +48,7 @@ public class AiService {
 
         String groqResponse = groqModel.generate(prompt);
         String openRouterResponse = openRouterModel.generate(prompt);
-        String claudeResponse = openRouterModel.generate(prompt);
+        String claudeResponse = claudeModel.generate(prompt);
 
         Map<String, String> answers = new HashMap<>();
         answers.put("groq", groqResponse);
