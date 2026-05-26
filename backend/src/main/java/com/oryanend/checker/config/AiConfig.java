@@ -44,8 +44,8 @@ public class AiConfig {
 
         return OpenAiChatModel.builder()
                 .apiKey(claudeApiKey)
-                .baseUrl("https://claude.ai/api/v1")
-                .modelName("claude-2")
+                .baseUrl("https://openrouter.ai/api/v1")
+                .modelName("openai/gpt-3.5-turbo")
                 .build();
     }
 }
