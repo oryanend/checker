@@ -1,0 +1,63 @@
+<div class="container mt-5">
+
+  <div class="form-group">
+    <label for="question" class="mb-2">
+      Pergunta:
+    </label>
+
+    <textarea
+      class="form-control"
+      rows="5"
+      id="question"
+      [(ngModel)]="question">
+    </textarea>
+  </div>
+
+  <button
+    class="btn btn-primary mt-3"
+    (click)="sendQuestion()">
+
+    Verificar Resposta
+  </button>
+
+  @if(answer){
+    @if(isLoading){
+      <div class="d-flex justify-content-center mt-4">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    }
+     @else {
+       <div class="card mt-4">
+         <div class="card-body">
+           <h5>
+             Respostas das IA's
+           </h5>
+
+           <div
+             *ngFor="let item of answer.answers | keyvalue"
+             class="mt-3">
+
+             <h6>
+               {{ item.key }}
+             </h6>
+
+             <p>
+               {{ item.value }}
+             </p>
+           </div>
+
+           <div class="alert mt-3"
+                [ngClass]="answer.isSameAnswer ? 'alert-success' : 'alert-warning'">
+
+             {{ answer.isSameAnswer
+             ? 'As IA\'s concordam'
+             : 'As IA\'s discordam'
+             }}
+           </div>
+         </div>
+       </div>
+     }
+  }
+</div>
